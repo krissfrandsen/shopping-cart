@@ -1,0 +1,12 @@
+import React from "react";
+import Button from "./reusableComponents/Button";
+
+const CardInfo = ({ shoePrice, updateCart }) => {
+  return (
+    <div className="cardInfo">
+      <p>{shoePrice} kr</p>
+      <Button addItem={updateCart} />
+    </div>
+  );
+};
+export default CardInfo;
